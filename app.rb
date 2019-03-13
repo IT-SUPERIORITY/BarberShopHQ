@@ -1,5 +1,4 @@
-#encoding:cp866
-
+#encoding: cp866
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
@@ -34,7 +33,7 @@ post '/visit' do
 
 	@c = Client.new params[:client]
 	if @c.save
-		erb "<h2>ëØ†·®°Æ, ¢Î ß†Ø®·†´®·Ï!</h2>"
+		erb "<h2>–°–ø–∞—Å–∏–±–æ, –≤—ã –∑–∞–ø–∏—Å–∞–ª–∏—Å—å!</h2>"
 	else
 		@error = @c.errors.full_messages.first
 		erb :visit
